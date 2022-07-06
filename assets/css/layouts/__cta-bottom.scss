@@ -1,0 +1,44 @@
+
+/* cta bottom area css start here */ 
+
+.cta-bottom-area {
+    padding: 50px 0;
+    background-color: $primary_color;
+    color: $white;
+    @include max-xs {
+        text-align: center;
+    }
+    @include min-sm {
+        text-align: center;
+    }
+    h2 {
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 55px;
+        @include max-xs {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        @include min-sm {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        @include min-md {
+            font-size: 45px;
+        }
+    }
+    a {
+        display: block;
+        color: $white;
+        font-size: 18px;
+        margin: 8px 0;
+        font-weight: 500;
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+/* cta bottom area css end here */ 

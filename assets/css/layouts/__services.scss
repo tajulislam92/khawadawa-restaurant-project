@@ -1,0 +1,51 @@
+
+
+/* services area css start here */ 
+
+.services-area {
+    .single-service {
+        text-align: center;
+        margin-bottom: 30px;
+        border: 1px solid $gray;
+        padding: 30px 20px;
+        position: relative;
+        @include min-md {
+            padding: 20px;
+        }
+        &:hover {
+            h4 {
+                &::before,
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+        img {
+            width: 50px;
+        }
+        h4 {
+            margin: 15px 0;
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 5px;
+                background-color: $primary_color;
+                transition: .3s;
+            }
+            &::before {
+                left: 0;
+                top: -3px;
+            }
+            &::after {
+                right: 0;
+                bottom: -3px;
+            }
+        }
+    }
+}
+
+
+
+/* services area css end here */ 

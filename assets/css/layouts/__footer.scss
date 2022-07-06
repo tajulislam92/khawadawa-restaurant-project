@@ -1,0 +1,91 @@
+
+
+/* footer area css start here */ 
+
+.footer-area {
+    @include max-xs {
+        padding: 30px 0;
+    }
+    .single-footer {
+        @include max-xs{
+            margin-top: 10px;
+        }
+        @include min-sm {
+            margin-top: 20px;
+        }
+        @include min-lg {
+            margin-top: 30px;
+        }
+        img {
+            margin-top: 80px;
+            @include max-xs {
+                margin-top: 0;
+                margin-bottom: 20px;
+                display: block;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+        h4 {
+            text-transform: capitalize;
+            color: $white;
+            margin-bottom: 15px;
+        }
+        ul {
+            li {
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                color: $white;
+                font-weight: 600;
+                i {
+                    margin-right: 8px;
+                }
+                a {
+                    color: $white;
+                    text-transform: capitalize;
+                    transition: .3s;
+                    font-weight: 600;
+                    &:hover {
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+    .footer-social {
+        border-top: 1px solid $gray;
+        margin-top: 20px;
+        padding-top: 20px;
+        @include max-xs {
+            text-align: center;
+        }
+        @include min-sm {
+            text-align: center;
+        }
+        a {
+            color: $white;
+            margin-right: 15px;
+            transition: .3s;
+            &:hover {
+                color: $primary_color;
+            }
+        }
+        
+    }
+    .footer-copy {
+        text-align: right;
+        border-top: 1px solid $gray;
+        margin-top: 20px;
+        padding-top: 20px;
+        color: $white;
+        @include max-xs {
+            text-align: center;
+        }
+        @include min-sm {
+            text-align: center;
+        }
+    }
+}
+
+
+/* footer area css end here */ 

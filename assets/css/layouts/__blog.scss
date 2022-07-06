@@ -1,0 +1,61 @@
+
+/* Blog area css start here */ 
+
+.blog-area {
+    background-color: $bg_gray;
+    &.page-blog {
+            .single-blog {
+                margin-bottom: 30px;
+            }
+        }
+    .single-blog {
+        background-color: $white;
+        @include max-xs {
+            margin-top: 10px;
+        }
+        @include min-sm {
+            margin-top: 20px;
+        }
+        @include min-md {
+            margin-top: 30px;
+        }
+        img {
+            width: 100%;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: space-evenly;
+            border-bottom: 1px dashed $black;
+            a {
+                display: block;
+                padding: 12px 0;
+                text-transform: capitalize;
+                &:hover {
+                    color: $primary_color;
+                }
+            }
+        }
+        h4 {
+            padding: 20px;
+            text-transform: capitalize;
+        }
+        p {
+            padding: 0 20px;
+            line-height: 24px;
+        }
+        a {
+            padding: 10px 20px;
+            display: block;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-style: italic;
+            transition: .3s;
+            &:hover {
+                color: $primary_color
+            }
+        }
+    }
+}
+
+
+/* Blog area css end here */ 

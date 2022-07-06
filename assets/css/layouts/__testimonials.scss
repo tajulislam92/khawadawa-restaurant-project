@@ -1,0 +1,62 @@
+
+/* testimonial area css start here */ 
+
+.testimonials-area {
+    color: $white;
+    .section-title {
+        @include max-xs {
+            h4 {
+                line-height: 50px;
+            }
+        }
+    }
+    .testimonials {
+        .slick-dots {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 50px;
+            li {
+                display: inline-block;
+                margin: 0 5px;
+                &.slick-active {
+                        button {
+                            background-color: $primary_color;
+                        }
+                    }
+                button {
+                    text-indent: -9999px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 0;
+                }
+            }
+        }
+        .single-testimonials {
+        text-align: center;
+        padding: 0 25px;
+        img {
+            max-width: 90px;
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 1px dashed $gray;
+            padding: 3px;
+        }
+        p {
+            margin: 20px 0;
+        }
+        h4 {
+            text-transform: capitalize;
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                display: block;
+            }
+        }
+    }
+    }
+}
+
+
+/* testimonial area css end here */ 
